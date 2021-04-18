@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+#p1service{
+	font-family: 'Josefin Sans', sans-serif;
+	color: rgb(114, 114, 114);
+	font-size: 18px;
+	font-weight: 400;
+	
+}
+#linkcol{
+	color: tomato;
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #3a3a3a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgb(3, 87, 41);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+  }
+
+h1.title{
+	margin-bottom: 7px;
+	color: #444444;
+	font-family: 'Indie Flower', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 3px;
+	letter-spacing: 5px;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid #fb2274;
+    color: #fb2274;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.main_container{
+	position: relative;
+}
+
+/* Navigation Bar */
+.navbar{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	display: flex;
+	
+	align-items: center;
+	z-index: 5;
+}
+
+.logo{
+	
+	height: 10px;
+	width: 50px;
+	margin-right: 65%;
+	margin-left: 2%;
+	margin-bottom: 1%;
+	filter: contrast(0%);
+}
+
+.navbar_items ul{
+	display: flex;
+	margin-top: 10%;
+	
+
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* banner_image */
+.banner_image{
+	background: url('images/p3.jpg') no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+.banner_content{
+	text-align: center;
+	color: #fff;
+	z-index: 5;
+}
+
+#ncol{
+	color: red;
+	font-size: 90px;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 49px;
+	margin-bottom: 15px;
+	font-size: 70px;
+}
+
+.banner_content h1 span{
+	color: #fb2274;
+}
+
+.banner_content p{
+	font-size: 20px;
+}
+
+
+/* About */
+.about,
+.services,
+.contactus,
+.ourteam{
+	text-align: center;
+	padding: 5% 10%;
+}
+
+/* Services */
+.services{
+	background: #ffd5d5;
+}
+
+
+
+
+.diff_services {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diff_services .diff_services_item {
+    width: 35%;
+}
+
+.diff_services .diff_services_item img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.diff_services .diff_services_item h3 {
+    color: #fa002a;
+    margin-bottom: 15px;
+	font-size: 25px;
+}
+
+#pservice{
+	font-size: 15px;
+	color: rgb(85, 85, 85);
+}
+
+
+
+
+/* our team */
+.ourteam{
+	background: #d8ffc1;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.ourteam_wrapper{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;  
+	font-family: 'Josefin Sans', sans-serif;
+	margin-top: 5%;
+	margin-bottom: 3%;
+}
+
+.icon{
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	background-color: #d5f7ff;
+	margin: 10px;
+	box-shadow: 1px 4px 10px 2px rgb(141, 141, 141);
+	line-height: 110px;
+}
+
+
+.icon i{
+	transition: all 0.3s linear;
+}
+
+.fa-instagram{color: rgb(235, 70, 33);}
+.fa-twitter{color: rgb(29,161,242);}
+.fa-reddit{color: rgba(255, 86, 0, 1);}
+.fa-github{color: rgb(44, 43, 43);}
+
+.icon:hover i{
+	transform: scale(1.4);
+}
+
+
+.ourteam_wrapper .team{
+	margin-top: 3%s;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.ourteam_wrapper .team_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.ourteam_wrapper .team_members img{
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: all 0.5s ease;
+}
+
+.ourteam_wrapper .team_members:hover img{
+	transform: scale(1.1);
+}
+
+.mail{
+	margin-top: 2%;
+	color: rgb(49, 49, 49);
+	font-size: 20px;
+}
+
+
+
+/* footer */
+.footer{
+	width: 100%;
+	text-align: center;
+	background: #444444;
+	padding: 20px 0;
+}
+
+.footer a{
+	color: #fff;
+}
+
+
+
+@media (max-width: 600px){
+
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+	
+	.main_container{
+	position: relative;
+	width: 500px;
+	}
+
+	.logo{
+		
+		position: absolute;
+		top: 110%;
+		height: 10px;
+		width: 50px;
+		margin-right: 11%;
+		margin-left: 2%;
+		margin-top: 1%;
+		margin-bottom: 2%;
+		
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+		margin-top: 20%;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.banner_content{
+		margin-top: 60px;
+	}
+
+}
+
+
+/* arrow */
+.arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background: #fb2274;
+	border-radius: 50%;
+	display: none;
+}
+
+.arrow img{
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+}
+
+
+
+
+
+

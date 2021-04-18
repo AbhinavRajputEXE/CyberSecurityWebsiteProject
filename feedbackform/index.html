@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback form</title>
+	<link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/73e96bc1b0.js" crossorigin="anonymous"></script>
+  <script src="myscripts.js"></script>
+</head>
+
+<div class="bg-image"></div>
+<body>
+
+<a href="../index.html" class="homepage"><i class="fas fa-home"></i></a> 
+
+<div class="wrapper">
+  <div class="title">
+    <h1>Feedback form</h1>
+  </div>
+  <form action="https://formspree.io/f/xyylgpkr" method="POST" id="my-form">
+  <div class="contact-form">
+
+    
+    <div class="input-fields">
+      <input type="text" class="input" placeholder="Name" name="name">
+      <input type="text" class="input" placeholder="Email Address" name="email">
+      <input type="text" class="input" placeholder="Phone" name="phone">
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+      </div>
+    </div>
+    <div class="msg">
+      <textarea placeholder="Type your feedback" name="text"></textarea>
+      <div class="btn"><button type="submit">SEND</button></div>
+    </div>
+  </div>
+  </form>
+</div>
+
+	
+</body>
+</html>
